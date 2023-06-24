@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>hw4-main page</title>
+        <title>Webstudio</title>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -31,15 +31,19 @@
                     <nav>
                         <ul class="nav-header">
                             <li>
-                                <a class="link-agency" href="#">Agencja</a>
+                                <a
+                                    class="nav-link underline"
+                                    href="./index.html"
+                                    >Agencja</a
+                                >
                             </li>
                             <li>
-                                <a class="link-portfolio" href="portfolio.html">
+                                <a class="nav-link" href="./portfolio.html">
                                     Portfolio
                                 </a>
                             </li>
                             <li>
-                                <a href="#">Kontakt</a>
+                                <a href="./kontakt.html">Kontakt</a>
                             </li>
                         </ul>
                     </nav>
@@ -66,7 +70,7 @@
             <div class="main-header">
                 <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
 
-                <button class="order-the-service" type="button">
+                <button class="order-the-service" type="button" data-modal-open>
                     Zamów usługę
                 </button>
             </div>
@@ -127,23 +131,25 @@
                 </ul>
                 <h2>Czym się zajmujemy</h2>
                 <ul class="section-what-we-do">
-                    <li class="what-we-do-images">
+                    <li class="what-we-do-images what-we-do-position">
                         <img
                             alt="man writing code"
                             width="370"
                             height="294"
                             src="./images/img1.jpg"
                         />
+                        <p class="what-we-do-title">APLIKACJE KOMPUTEROWE</p>
                     </li>
-                    <li class="what-we-do-images">
+                    <li class="what-we-do-images what-we-do-position">
                         <img
                             alt="man creating a mobile application"
                             width="370"
                             height="294"
                             src="./images/img2.jpg"
                         />
+                        <p class="what-we-do-title">APLIKACJE MOBILNE</p>
                     </li>
-                    <li class="margin">
+                    <li class="margin what-we-do-position">
                         <img
                             class="what-we-do-images"
                             alt="man using graphic tablet"
@@ -151,6 +157,7 @@
                             height="294"
                             src="./images/img3.jpg"
                         />
+                        <p class="what-we-do-title">ROZWIĄZANIA GRAFICZNE</p>
                     </li>
                 </ul>
             </div>
@@ -371,7 +378,6 @@
                                 width="270"
                                 height="260"
                                 src="./images/uidesignerimg.jpg"
-                               
                             />
                             <header>
                                 <h5 class="names">John Doe</h5>
@@ -567,6 +573,17 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="modal-icon"  type="button"  data-modal-close>
+                    <svg width="11px" height="11px">
+                        <use
+                            href="./images/icons.svg/close.svg#icon-close-black-18dp-2-1-1"
+                        ></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
         <script src="./js/modal.js"></script>
     </body>
 </html>
